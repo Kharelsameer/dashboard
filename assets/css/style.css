@@ -8,6 +8,7 @@
   --primary-color: rgb(64, 81, 137);
   --gray-text: rgb(135, 138, 153);
   --box-shadow: 1px 2px rgba(56, 65, 74, 0.15);
+  --header-border: #e9ebec;
 }
 
 body {
@@ -231,7 +232,7 @@ aside h1 img {
   width: auto;
 }
 
-aside nav .nav-title{
+aside nav .nav-title {
   text-transform: uppercase;
   font-size: 11px;
   line-height: 1.6;
@@ -239,7 +240,7 @@ aside nav .nav-title{
   color: rgb(131, 143, 185);
   padding: 12px 0;
 }
-aside nav a{
+aside nav a {
   padding: 10px 0;
   color: rgb(171, 185, 232);
   text-decoration: none;
@@ -248,42 +249,90 @@ aside nav a{
   display: flex;
   align-items: center;
   width: 100%;
-
 }
-aside nav span{
+aside nav span {
   flex-grow: 2;
 }
 aside nav a i {
   font-size: 18px;
   margin-right: 10px;
 }
-aside nav a i.ri-arrow-down-s-line{
+aside nav a i.ri-arrow-down-s-line {
   display: none;
 }
 
-
-aside nav a i:nth-child(2){
+aside nav a i:nth-child(2) {
   margin-right: 0;
 }
 
 aside nav a.active,
-aside nav a:hover{
+aside nav a:hover {
   color: white;
 }
-aside nav a.active i.ri-arrow-down-s-line{
+aside nav a.active i.ri-arrow-down-s-line {
   display: block;
 }
-aside nav a.active i.ri-arrow-right-s-line{
+aside nav a.active i.ri-arrow-right-s-line {
   display: none;
 }
-aside nav ul ul a{
+aside nav ul ul a {
   font-size: 13px;
   padding: 8px 4px;
   line-height: 1.2;
 }
-aside nav ul ul a i{
+aside nav ul ul a i {
   font-size: 13px;
 }
 
+/* STRAT MENU */
+.menu-wrapper {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid var(--box-shadow);
+  box-sizing: border-box;
+  width: calc(100% - 250px);
+  box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+}
+
+.menu-left-component {
+  display: flex;
+  line-height: 19px;
+  padding: 6px 18px;
+  align-items: center;
+  
+}
+.menu-left-component button{
+  border: none;
+  font-size: 22px;
+  color: var(--body-text-color);
+  background-color: #fff;
+}
+.menu-left-component i {
+  
+}
+.menu-left-component .search-box {
+  background-color: var(--body-bg);
+  box-sizing: border-box;
+  padding: 16px 0;
+  color: var(--body-text-color);
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  position: relative;
+  text-align: start;
+
+}
+
+.menu-left-component .search-box input {
+  
+ 
+}
+
+/* END MENU */
 
 /* End Dashboard */
